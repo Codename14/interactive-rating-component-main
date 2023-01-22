@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsla(216, 12%, 54%, 0.166);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Fontsize: 1, 5rem;
+$borderRadious: 30px;
+
+html {
+  font-size: 62, 5%;
+  font-family: "Overpass", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background: $Very-Dark-Blue;
+}
+
+.box {
+  margin: 1rem;
+  max-width: 375px;
+  background: linear-gradient($Dark-Blue, darken($Dark-Blue, 6%));
+  color: $White;
+  padding: 2rem;
+  border-radius: 10px;
+  .star {
+    padding: 1rem;
+  }
+  .box-title {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+.center {
+  text-align: center;
+}
+
+#rateEnd {
+  display: none;
+}
+
+.text {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  opacity: 0.5;
+}
+.count-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $Light-Grey;
+  width: 50px;
+  height: 50px;
+  background-color: $Medium-Grey;
+  border-radius: 30px;
+}
+.list {
+  justify-content: space-between;
+  .count {
+    cursor: pointer;
+    &:hover {
+      background-color: $Orange;
+      color: white;
+    }
+  }
+}
+.selected-count {
+  background: $Light-Grey;
+  color: $White;
+}
+
+.btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  border-radius: $borderRadious;
+  background: $Orange;
+  color: $White;
+  border: none;
+  letter-spacing: 0.2rem;
+  &:hover {
+    background: $White;
+    color: $Orange;
+  }
+}
+
+//box 2.
+.selected-text {
+  margin: 1rem 0 0.3rem;
+  display: inline-block;
+  background: $Medium-Grey;
+  border-radius: $borderRadious;
+  padding: 0.3rem 1rem;
+  color: $Orange;
+}
+
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
