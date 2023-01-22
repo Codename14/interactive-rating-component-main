@@ -28,7 +28,7 @@ html {
   background: linear-gradient(hsl(213deg, 19%, 18%), #191e24);
   color: hsl(0deg, 0%, 100%);
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .box .star {
   padding: 1rem;
