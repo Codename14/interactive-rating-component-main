@@ -1,1 +1,53 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.b532600b.png"><link rel="stylesheet" href="/style.264701fb.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><title>Frontend Mentor | Interactive rating component</title></head><body>  <div class="flex hero"> <div class="box" id="rateStart"> <img src="/icon-star.ddbb3e34.svg" alt="" class="count-form star"> <p class="box-title">How did we do?</p> <div class="text"> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </div> <ul class="flex list"> <li class="count count-form">1</li> <li class="count count-form">2</li> <li class="count count-form">3</li> <li class="count count-form">4</li> <li class="count count-form">5</li> </ul> <button onclick="Clicked()" class="btn">Submit</button> </div>  <div class="box center" id="rateEnd"> <img src="/illustration-thank-you.43bb3ddd.svg" alt="" class="image"> <a class="selected-text"> You selected <span class="selNumber">4</span> out of 5 </a> <div class="box-title">Thank you</div> <div class="text"> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch! </div> </div> </div> <div class="attribution center"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div> <script src="/main.6c750d03.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="/main.1f19ae8e.js"></script>
+  <script src="/style.e308ff8e.js"></script></head>
+  <body>
+    <!-- Rating state start -->
+    <header class="hero flex">
+      <div class="box" id="rateStart">
+        <img src="/icon-star.46c19366.svg" alt="" class="star count-form">
+        <p class="box-title">How did we do?</p>
+        <div class="text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </div>
+        <ul class="list flex">
+          <li class="count count-form">1</li>
+          <li class="count count-form">2</li>
+          <li class="count count-form">3</li>
+          <li class="count count-form">4</li>
+          <li class="count count-form">5</li>
+        </ul>
+        <button onclick="Clicked()" class="btn">Submit</button>
+      </div>
+
+      <!-- Rating state end -->
+      <div class="box center" id="rateEnd">
+        <img src="/illustration-thank-you.9f554505.svg" alt="" class="image">
+        <a class="selected-text">
+          You selected <span class="selNumber">4</span> out of 5
+        </a>
+        <div class="box-title">Thank you</div>
+        <div class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </div>
+      </div>
+    </header>
+    <footer class="attribution center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Alex</a>.
+    </footer>
+  </body>
+</html>

@@ -19,6 +19,7 @@ html {
 
 .hero {
   background: hsl(216deg, 12%, 8%);
+  min-height: 60vh;
 }
 
 .box {
@@ -108,9 +109,18 @@ html {
 }
 
 .attribution {
-  font-size: 11px;
+  background: hsl(216deg, 12%, 8%);
+  color: hsl(25deg, 97%, 53%);
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(25deg, 97%, 53%);
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    min-height: 98vh;
+  }
 }/*# sourceMappingURL=style.css.map */

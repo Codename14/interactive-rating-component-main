@@ -6,15 +6,6 @@
   list-style: none;
 }
 
-$Orange: hsl(25, 97%, 53%);
-$White: hsl(0, 0%, 100%);
-$Light-Grey: hsl(217, 12%, 63%);
-$Medium-Grey: hsla(216, 12%, 54%, 0.166);
-$Dark-Blue: hsl(213, 19%, 18%);
-$Very-Dark-Blue: hsl(216, 12%, 8%);
-$Fontsize: 1, 5rem;
-$borderRadious: 30px;
-
 html {
   font-size: 62, 5%;
   font-family: "Overpass", sans-serif;
@@ -27,26 +18,27 @@ html {
 }
 
 .hero {
-  background: $Very-Dark-Blue;
+  background: hsl(216deg, 12%, 8%);
   min-height: 60vh;
 }
 
 .box {
   margin: 1rem;
   max-width: 375px;
-  background: linear-gradient($Dark-Blue, darken($Dark-Blue, 6%));
-  color: $White;
+  background: linear-gradient(hsl(213deg, 19%, 18%), #191e24);
+  color: hsl(0deg, 0%, 100%);
   padding: 2rem;
   border-radius: 10px;
-  .star {
-    padding: 1rem;
-  }
-  .box-title {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
 }
+.box .star {
+  padding: 1rem;
+}
+.box .box-title {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .center {
   text-align: center;
 }
@@ -61,29 +53,32 @@ html {
   line-height: 1.5rem;
   opacity: 0.5;
 }
+
 .count-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $Light-Grey;
+  color: hsl(217deg, 12%, 63%);
   width: 50px;
   height: 50px;
-  background-color: $Medium-Grey;
+  background-color: hsla(216deg, 12%, 54%, 0.166);
   border-radius: 30px;
 }
+
 .list {
   justify-content: space-between;
-  .count {
-    cursor: pointer;
-    &:hover {
-      background-color: $Orange;
-      color: white;
-    }
-  }
 }
+.list .count {
+  cursor: pointer;
+}
+.list .count:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+
 .selected-count {
-  background: $Light-Grey;
-  color: $White;
+  background: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 .btn {
@@ -93,33 +88,33 @@ html {
   padding: 1rem;
   text-align: center;
   width: 100%;
-  border-radius: $borderRadious;
-  background: $Orange;
-  color: $White;
+  border-radius: 30px;
+  background: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
   border: none;
   letter-spacing: 0.2rem;
-  &:hover {
-    background: $White;
-    color: $Orange;
-  }
+}
+.btn:hover {
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
 }
 
-//box 2.
 .selected-text {
   margin: 1rem 0 0.3rem;
   display: inline-block;
-  background: $Medium-Grey;
-  border-radius: $borderRadious;
+  background: hsla(216deg, 12%, 54%, 0.166);
+  border-radius: 30px;
   padding: 0.3rem 1rem;
-  color: $Orange;
+  color: hsl(25deg, 97%, 53%);
 }
 
 .attribution {
-  background: $Very-Dark-Blue;
-  color: $Orange;
+  background: hsl(216deg, 12%, 8%);
+  color: hsl(25deg, 97%, 53%);
 }
+
 .attribution a {
-  color: $Orange;
+  color: hsl(25deg, 97%, 53%);
   text-decoration: underline;
   font-weight: 800;
 }
@@ -129,3 +124,5 @@ html {
     min-height: 98vh;
   }
 }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
