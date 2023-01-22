@@ -16,11 +16,13 @@ numbers.forEach((number) => {
   });
 });
 
-function Clicked() {
+let button = document.querySelector(".btn");
+
+button.addEventListener("click", function Clicked() {
   if (selNum != null) {
     document.getElementById("rateStart").style.display = "none";
     document.getElementById("rateEnd").style.display = "block";
   } else {
     alert("Please select one!");
   }
-}
+});

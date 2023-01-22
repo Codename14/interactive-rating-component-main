@@ -132,14 +132,15 @@ numbers.forEach(function (number) {
     selNum = number.innerHTML;
   });
 });
-function Clicked() {
+var button = document.querySelector(".btn");
+button.addEventListener("click", function Clicked() {
   if (selNum != null) {
     document.getElementById("rateStart").style.display = "none";
     document.getElementById("rateEnd").style.display = "block";
   } else {
     alert("Please select one!");
   }
-}
+});
 },{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
